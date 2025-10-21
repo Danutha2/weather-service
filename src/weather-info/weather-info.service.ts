@@ -32,7 +32,7 @@ export class WeatherInfoService {
       const failRate = Number(process.env.WEATHER_FAIL_RATE) || 0;
       this.logger.debug(` Current config — Delay: ${this.dynamicDelayMs}ms | Fail Rate: ${failRate}`);
 
-      // // Artificial delay
+      // Artificial delay
       // if (this.dynamicDelayMs > 0) {
       //   this.logger.debug(` Simulating delay of ${this.dynamicDelayMs}ms`);
       //   await new Promise(resolve => setTimeout(resolve, this.dynamicDelayMs));
